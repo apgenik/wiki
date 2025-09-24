@@ -6,7 +6,8 @@ du -t 1G -Ph /folder_name/
 # показывает размер всех файлов и папок в директории /folder_name/ отсортированный по убыванию
 du -ah /folder_name/ | sort -rh
 
-
+#
+netstat -an | grep :9093 | wc -l
 
 # Шпаргалка по CRON JOB 
 
