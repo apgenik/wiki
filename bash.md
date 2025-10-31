@@ -9,6 +9,9 @@ du -ah /folder_name/ | sort -rh
 #
 netstat -an | grep :9093 | wc -l
 
+#
+openssl s_client -connect example.com:443 -debug
+
 # Шпаргалка по CRON JOB 
 
 Cron - мощный инструмент для автоматического запуска команд и скриптов по расписанию. Вот основные моменты, которые нужно знать:
