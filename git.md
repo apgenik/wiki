@@ -1,5 +1,9 @@
 
 ```
+# сброс изменений
+git reset --hard
+
+
 # удалить тег локально
 git tag -d name_tag
 
