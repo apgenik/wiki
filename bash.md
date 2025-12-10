@@ -12,6 +12,12 @@ netstat -an | grep :9093 | wc -l
 #
 openssl s_client -connect example.com:443 -debug
 
+# Запустите top, нажмите 'H' (включить Threads), затем 'f' → добавьте колонку "WCHAN"
+top -p $pid
+
+pid=$(pgrep -f 'data-prepper')
+echo "Data Prepper PID: $pid"
+
 # Шпаргалка по CRON JOB 
 
 Cron - мощный инструмент для автоматического запуска команд и скриптов по расписанию. Вот основные моменты, которые нужно знать:
