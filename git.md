@@ -12,3 +12,6 @@ git push origin --delete name_tag
 
 # проверить что тег удален
 git ls-remote --tags origin
+
+# посмотреть куда выполняем push
+git remote -v
